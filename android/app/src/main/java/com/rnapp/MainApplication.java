@@ -26,7 +26,7 @@ import java.util.List;
 
 
 // Application implements ReactApplication
-public class MainApplication extends NavigationApplication{
+// public class MainApplication extends NavigationApplication{
   // private final ReactModuleRegistryProvider mModuleRegistryProvider = new ReactModuleRegistryProvider(
   //   new BasePackageList().getPackageList(),
   //   Arrays.<SingletonModule>asList()
@@ -66,9 +66,9 @@ public class MainApplication extends NavigationApplication{
 
 
 
+public class MainApplication extends NavigationApplication {
 
-
-	@Override
+  @Override
 	public boolean isDebug() {
 		// Make sure you are using BuildConfig from your own application
 		return BuildConfig.DEBUG;
@@ -79,7 +79,6 @@ public class MainApplication extends NavigationApplication{
 		// No need to add RnnPackage and MainReactPackage
 		return Arrays.<ReactPackage>asList(
 			// eg. new VectorIconsPackage()
-      new VectorIconsPackage()
 		);
 	}
 
@@ -90,6 +89,7 @@ public class MainApplication extends NavigationApplication{
 
   @Override
   public String getJSMainModuleName() {
-	return "index";
+    return "index";
+  }
 }
-}
+
