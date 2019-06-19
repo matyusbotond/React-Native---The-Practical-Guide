@@ -1,0 +1,7 @@
+{
+  "name": "rnApp",
+  "displayName": "rnApp",
+  "expo": {
+    "sdkVersion": "33.0.0"
+  }
+}
